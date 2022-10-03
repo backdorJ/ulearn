@@ -35,7 +35,7 @@ namespace Project
                 factN = factN * n;
                 factK = factK * k;
                 beforeCorrect = afterCorrect;
-                afterCorrect = (Math.Pow(2, k) / (factN) / ((factK) * (factN - factK)));
+                afterCorrect = (Pow(2, k) / (factN) / ((factK) * (factN - factK)));
                 sum += afterCorrect;
                 k--;
                 n--;
