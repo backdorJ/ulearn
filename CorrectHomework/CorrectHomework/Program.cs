@@ -4,7 +4,16 @@ namespace Project
 {
     class Lesson
     {
-
+        
+         static int Pow(int a, int b)
+        {
+            int c = a;
+            for (int i = 1; i < b; i++)
+            {
+                c *=  a;
+            }
+            return c;
+        }
 
         static void Main()
         {
