@@ -1,10 +1,10 @@
-﻿using System.Diagnostics.Metrics;
+using System.Diagnostics.Metrics;
 
 namespace Project
 {
     class Lesson
     {
-        
+
 
         static void Main()
         {
@@ -20,18 +20,18 @@ namespace Project
             double factN = 1;
             double factK = 1;
             int x = 2;
-            int out = x;
+            int outX = x;
             int i = 1;
 
             do
             {
                 factN = factN * n;
                 factK = factK * k;
-                out = out * x;
+                outX = outX * x;
                 beforeCorrect = afterCorrect;
-                afterCorrect = (out / (factN) / ((factK) * (factN - factK)));
+                afterCorrect = (outX / (factN) / ((factK) * (factN - factK)));
                 sum += afterCorrect;
-            
+
                 k--;
                 n--;
                 i++;
