@@ -5,14 +5,19 @@ namespace Project
     class Lesson
     {
         
-         static int Pow(int a, int b)
+         static int Pow(int x, int k)
         {
-            int c = a;
-            for (int i = 1; i < b; i++)
+            int x = 2; //Число
+            int k = 4; //Степень
+
+            int out = x;
+
+            for (int i = 1; i < y; i++)
             {
-                c *=  a;
+                out = out * x;
             }
-            return c;
+             return out
+
         }
 
         static void Main()
@@ -35,7 +40,7 @@ namespace Project
                 factN = factN * n;
                 factK = factK * k;
                 beforeCorrect = afterCorrect;
-                afterCorrect = (Pow(2, k) / (factN) / ((factK) * (factN - factK)));
+                afterCorrect = (Pow(2,k) / (factN) / ((factK) * (factN - factK)));
                 sum += afterCorrect;
                 k--;
                 n--;
