@@ -19,18 +19,23 @@ namespace Project
             double afterCorrect = 0;
             double factN = 1;
             double factK = 1;
-
+            int x = 2;
+            int outX = x;
+            int i = 1;
 
             do
             {
                 factN = factN * n;
                 factK = factK * k;
+                outX = outX * x;
                 beforeCorrect = afterCorrect;
-                afterCorrect = (Math.Pow(2, k) / (factN) / ((factK) * (factN - factK)));
+                afterCorrect = (outX / (factN) / ((factK) * (factN - factK)));
                 sum += afterCorrect;
+
                 k--;
                 n--;
-            } while (Math.Abs(beforeCorrect - afterCorrect) > e);
+                i++;
+            } while ((Math.Abs(beforeCorrect - afterCorrect) > e) || (i < k));
 
             sum = -2 + 2 * sum;
 
