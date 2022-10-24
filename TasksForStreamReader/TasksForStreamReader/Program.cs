@@ -4,7 +4,8 @@
     {
         static void Main()
         {
-            string text = "Папа и мама ходили гулять ночью";
+            Console.WriteLine("Введите строку - ");
+            string text = Console.ReadLine();
             string path = @"C:\Users\Damir\Desktop\text.txt";
 
             using (StreamWriter sw = new StreamWriter(path, false))
